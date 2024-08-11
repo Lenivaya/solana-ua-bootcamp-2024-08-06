@@ -1,0 +1,31 @@
+{
+  "name": "solana-training-lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:generate-keypair": "tsx src/generate-keypair.ts",
+    "run:load-keypair": "tsx src/load-keypair.ts",
+    "run:check-balance": "tsx src/check-balance.ts",
+    "code:format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana-developers/helpers": "^2.4.0",
+    "@solana/web3.js": "^1.95.2",
+    "bigint-buffer": "^1.1.5",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.16.5"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.7",
+    "@types/node": "^22.1.0",
+    "prettier-config-standard": "^7.0.0"
+  },
+  "packageManager": "pnpm@9.6.0+sha256.dae0f7e822c56b20979bb5965e3b73b8bdabb6b8b8ef121da6d857508599ca35",
+  "prettier": "prettier-config-standard"
+}
