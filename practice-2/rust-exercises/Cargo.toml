@@ -1,0 +1,22 @@
+[package]
+name = "rust-exercises"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenvy_macro = "0.15.7"
+anyhow = "1.0.86"
+clap = { version = "4.5.16", features = ["derive", "cargo", "unicode", "wrap_help"] }
+#solana-client = "2.0.5"
+#solana-sdk = "2.0.5"
+#solana-program = "2.0.5"
+#spl-token = "6.0.0"
+#spl-associated-token-account = "4.0.0"
+solana-client = "^1.17"
+solana-sdk = "^1.17"
+solana-program = "^1.17"
+spl-token = "^4"
+spl-associated-token-account = "^2"
+mpl-token-metadata = "4.1.2"
+serde = { version = "1.0.208", features = ["derive"] }
+serde_json = "1.0.125"
