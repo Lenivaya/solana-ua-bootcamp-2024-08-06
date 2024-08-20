@@ -10,6 +10,9 @@
     "run:create-token-account": "tsx src/create-token-account.ts",
     "run:mint-tokens": "tsx src/mint-tokens.ts",
     "run:create-token-metadata": "tsx src/create-token-metadata.ts",
+    "run:mint-token-multisig": "tsx src/mint-token-multisig.ts",
+    "run:send-tokens-partial-sign": "tsx src/send-tokens-partial-sign.ts",
+    "run:send-tokens-partial-sign-nonce": "tsx src/send-tokens-partial-sign-nonce.ts",
     "code:format": "prettier --write ."
   },
   "keywords": [],

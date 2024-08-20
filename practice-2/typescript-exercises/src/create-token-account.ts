@@ -4,13 +4,13 @@ import 'dotenv/config'
 import { getOrCreateAssociatedTokenAccount } from '@solana/spl-token'
 import { input } from '@inquirer/prompts'
 import { getExplorerLink } from '@solana-developers/helpers'
-import { loadKeypair } from './lib/utilts'
+import { loadMainKeypair } from './lib/utilts'
 
 async function main() {
   const connection = new Connection(clusterApiUrl('devnet'))
   console.log(chalk.yellow('Connected to devnet'))
 
-  const sender = loadKeypair()
+  const sender = loadMainKeypair()
 
   const tokenMintAddress = await input({
     message: 'Token mint address: '

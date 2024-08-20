@@ -9,7 +9,7 @@ import chalk from 'chalk'
 import 'dotenv/config'
 import { input } from '@inquirer/prompts'
 import { getExplorerLink } from '@solana-developers/helpers'
-import { loadKeypair } from './lib/utilts'
+import { loadMainKeypair } from './lib/utilts'
 import { createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata'
 
 const TOKEN_METADATA_PROGRAM_ID = new PublicKey(
@@ -20,7 +20,7 @@ async function main() {
   const connection = new Connection(clusterApiUrl('devnet'))
   console.log(chalk.yellow('Connected to devnet'))
 
-  const sender = loadKeypair()
+  const sender = loadMainKeypair()
 
   const tokenMintAddress = await input({
     message: 'Token mint address: '
