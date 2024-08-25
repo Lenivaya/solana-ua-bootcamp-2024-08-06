@@ -1,0 +1,19 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+escrow = "Gsf9ZkQa4TZovkUrGw3ENPzGBD55vFdh4Z2fUKuxGj8i"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+#test = "pnpm jest --preset ts-jest"
+test = "pnpm tsx tests/escrow.test.ts"
