@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+escrow_approve = "Hv53xkUw2PbqDDiFn7FWhmHffKVDm1jjLAtuwrEFSRHp"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "pnpm tsx tests/escrow.test.ts"
